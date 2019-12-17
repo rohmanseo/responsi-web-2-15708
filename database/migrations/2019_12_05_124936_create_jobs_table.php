@@ -13,9 +13,9 @@ class CreateJobsTable extends Migration
      */
     public function up()
     {
-        Schema::create('', function (Blueprint $table) {
-            // $table->('id_jobs'); big integer AUTO INCREMENT
-            // $table->('name'); string
+        Schema::create('jobs', function (Blueprint $table) {
+             $table->bigIncrements('id_jobs'); //big integer AUTO INCREMENT
+             $table->string('name'); //string
             $table->timestamps();
         });
     }

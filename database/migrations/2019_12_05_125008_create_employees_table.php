@@ -13,13 +13,13 @@ class CreateEmployeesTable extends Migration
      */
     public function up()
     {
-        Schema::create('', function (Blueprint $table) {
-            // $table->('id_employees'); big integer AUTO INCREMENT
-            // $table->('id_jobs')->unsigned(); big integer
-            // $table->('name'); string
-            // $table->('email'); string
-            // $table->('phone'); string
-            // $table->('address'); string
+        Schema::create('employees', function (Blueprint $table) {
+             $table->bigIncrements('id_employees'); //big integer AUTO INCREMENT
+             $table->bigInteger('id_jobs')->unsigned(); //big integer
+             $table->string('name'); //string
+             $table->string('email'); //string
+             $table->string('phone'); //string
+             $table->string('address'); //string
             $table->timestamps();
 
             $table->foreign('id_jobs')->references('id_jobs')->on('jobs');

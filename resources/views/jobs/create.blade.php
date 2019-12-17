@@ -1,7 +1,7 @@
-@extends('')
+@extends('layouts.app')
 @section('jobs','active')
-@section('')
-<form action="{{route('')}}" method="POST">
+@section('content')
+<form action="{{route('jobs.store')}}" method="POST">
   @csrf
   <div class="form-group">
     <label>Nama Jobs</label>
