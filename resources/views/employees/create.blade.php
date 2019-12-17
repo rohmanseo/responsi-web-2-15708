@@ -6,8 +6,8 @@
   <div class="form-group">
     <label>Jobs</label>
     <select name="job" class="form-control">
-      @foreach($jobs as $data)
-        <option value="{{$data->id_jobs}}">{{$data->name}}</option>
+      @foreach($data as $d)
+        <option value="{{$d->id_jobs}}">{{$d->name}}</option>
       @endforeach
     </select>
   </div>

@@ -12,11 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('jobs');
 });
 
- Route::resource('/jobs', 'JobsController');
- Route::resource('/employees', 'EmployeesController');
+ Route::resource('/jobs', 'JobsController')->middleware('auth');
+ Route::resource('/employees', 'EmployeesController')->middleware('auth');
+ Route::get('/info','InfoController@show');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

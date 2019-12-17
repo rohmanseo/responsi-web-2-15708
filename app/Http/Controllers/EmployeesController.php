@@ -53,7 +53,7 @@ class EmployeesController extends Controller
             'address' => $request->input('alamat')
         ]);
         $employees->save();
-        return redirect('employe');
+        return redirect('employees');
     }
 
     /**
@@ -76,8 +76,8 @@ class EmployeesController extends Controller
     public function edit($id)
     {
         $jobs = Jobs::all();
-        $data = Employees::where('id_employees', '=', $id)->firstOrFail();
-        return view('')->with('employees', $data)->with('jobs', $jobs);
+        $employees = Employees::where('id_employees', '=', $id)->firstOrFail();
+        return view('employees.edit',compact('jobs','employees'));
     }
 
     /**
@@ -104,7 +104,7 @@ class EmployeesController extends Controller
             'address' => $request->input('alamat')
         ];
         Employees::where('id_employees',$id)->update($data);
-        return redirect('employ');
+        return redirect('employees');
     }
 
     /**
@@ -116,6 +116,6 @@ class EmployeesController extends Controller
     public function destroy($id)
     {
         Employees::where('id_employees',$id)->delete();
-        return redirect('employe');
+        return redirect('employees');
     }
 }

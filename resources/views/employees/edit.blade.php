@@ -1,7 +1,7 @@
-@extends('')
+@extends('layouts.app')
 @section('employees','active')
-@section('')
-<form action="{{route('',$employees->id_employees)}}" method="POST">
+@section('content')
+<form action="{{route('employees.update',$employees->id_employees)}}" method="POST">
   @csrf
   @method('PUT')
   <div class="form-group">
@@ -22,7 +22,7 @@
   </div>
   <div class="form-group">
     <label>Kontak</label>
-    <input type="text" name="kontak" class="form-control" placeholder="..." value="{{$employees->phones}}">
+    <input type="text" name="kontak" class="form-control" placeholder="..." value="{{$employees->phone}}">
   </div>
   <div class="form-group">
     <label>Alamat</label>
