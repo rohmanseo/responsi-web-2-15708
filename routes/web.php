@@ -18,6 +18,15 @@ Route::get('/', function () {
  Route::resource('/jobs', 'JobsController')->middleware('auth');
  Route::resource('/employees', 'EmployeesController')->middleware('auth');
  Route::get('/info','InfoController@show');
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/tampilkan', function($nama = "lorem ipsum") {
+    $data = [
+        'name' => $nama,
+        'statusCode' => 200 
+    ];
+
+    return response()->json($data);
+});
