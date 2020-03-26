@@ -19,5 +19,19 @@ Route::get('/', function () {
  Route::resource('/employees', 'EmployeesController')->middleware('auth');
  Route::get('/info','InfoController@show');
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/login',function($name = "loremipsum"){
+
+    $data = [
+        "response" => [
+            "status" => 200
+        ],
+        "message" => "Hello World!!",
+        "name" => $name
+        
+    ];
+    
+    return response()->json($data);
+});
+
