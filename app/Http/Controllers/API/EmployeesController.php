@@ -59,7 +59,7 @@ class EmployeesController extends Controller
         $validator = Validator::make($request->all(), [
             'job'=>'required',
             'nama'=>'required|min:5|max:255',
-            'email'=>'required|email|unique:employees',
+            'email'=>'required|email',
             'kontak'=>'required',
             'alamat'=>'required',
         ]);
@@ -77,7 +77,7 @@ class EmployeesController extends Controller
         ];
 
         Employees::where('id_employees',$id)->update($data);
-
+        
         return response()->json([
             'status' => 'success'
         ]);
@@ -86,7 +86,7 @@ class EmployeesController extends Controller
     public function destroy($id)
     {
         Employees::where('id_employees',$id)->delete();
-        
+
         return response()->json([
             'status' => 'success'
         ]);
