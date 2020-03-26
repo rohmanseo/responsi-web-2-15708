@@ -18,5 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::resource('employees', 'API\EmployeesController',['except' => ['edit','create']]);
-Route::resource('jobs', 'API\JobsController',['only' => ['index','show']]);
+Route::resource('employees', 'API\EmployeesController',['middleware' => 'cors','except' => ['edit','create']]);
+Route::resource('jobs', 'API\JobsController',['middleware' => 'cors','only' => ['index','show']]);
