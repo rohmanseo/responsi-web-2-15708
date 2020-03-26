@@ -30,7 +30,7 @@ class EmployeesController extends Controller
         $validator = Validator::make($request->all(), [
             'job'=>'required',
             'nama'=>'required|min:5|max:255',
-            'email'=>'required|email',
+            'email'=>'required|email|unique:employees',
             'kontak'=>'required',
             'alamat'=>'required',
         ]);
@@ -56,13 +56,18 @@ class EmployeesController extends Controller
 
     public function update(Request $request, $id)
     {
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'job'=>'required',
-            'nama'=>'required',
-            'email'=>'required',
+            'nama'=>'required|min:5|max:255',
+            'email'=>'required|email|unique:employees',
             'kontak'=>'required',
-            'alamat'=>'required'
+            'alamat'=>'required',
         ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->errors());
+        }
+
         $data = [
             'id_jobs' => $request->input('job'),
             'name' => $request->input('nama'),
@@ -70,13 +75,20 @@ class EmployeesController extends Controller
             'phone' => $request->input('kontak'),
             'address' => $request->input('alamat')
         ];
+
         Employees::where('id_employees',$id)->update($data);
-        return redirect('employees');
+
+        return response()->json([
+            'status' => 'success'
+        ]);
     }
 
     public function destroy($id)
     {
         Employees::where('id_employees',$id)->delete();
-        return redirect('employees');
+        
+        return response()->json([
+            'status' => 'success'
+        ]);
     }
 }
