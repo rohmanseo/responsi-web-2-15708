@@ -25,7 +25,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/tampilkan', function($nama = "lorem ipsum") {
     $data = [
         'name' => $nama,
-        'statusCode' => 200 
+        'statusCode' => 200
     ];
 
     return response()->json($data);
