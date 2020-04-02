@@ -18,7 +18,7 @@ Route::get('/', function () {
  Route::resource('/jobs', 'JobsController')->middleware('auth');
  Route::resource('/employees', 'EmployeesController')->middleware('auth');
  Route::get('/info','InfoController@show');
-// Auth::routes();
+ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
