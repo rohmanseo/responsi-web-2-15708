@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="aad5cac9-e213-4f78-83ee-07c299b7d4aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/JobsTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/JobsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/JobsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +126,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/resources/views/employees/index.blade.php&#10;edit&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/resources/views/jobs/edit.blade.php&#10;emp&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/app/Employees.php&#10;emplo&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/app/Employees.php&#10;web&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/routes/web.php&#10;Empl&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/app/Employees.php&#10;jobscon&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/app/Http/Controllers/JobsController.php&#10;JobsController&#9;null&#9;null&#10;jobs&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/database/migrations/2019_12_05_124936_create_jobs_table.php&#10;employees&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/database/migrations/2019_12_05_125008_create_employees_table.php&#10;web.php&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/routes/web.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -147,7 +150,7 @@
       <workItem from="1586992252080" duration="567000" />
       <workItem from="1587012166661" duration="1051000" />
       <workItem from="1587074211035" duration="46000" />
-      <workItem from="1588200296214" duration="813000" />
+      <workItem from="1588200296214" duration="1728000" />
     </task>
     <servers />
   </component>
