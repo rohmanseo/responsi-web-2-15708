@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aad5cac9-e213-4f78-83ee-07c299b7d4aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uas.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Cors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +14,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,10 +120,10 @@
   <component name="ProjectId" id="1Zex3ONsu29vCP1G9xYzlRjq27y" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/resources/views/employees/index.blade.php&#10;edit&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/resources/views/jobs/edit.blade.php&#10;emp&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/app/Employees.php&#10;emplo&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/app/Employees.php&#10;web&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/routes/web.php&#10;Empl&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/app/Employees.php&#10;jobscon&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/app/Http/Controllers/JobsController.php&#10;JobsController&#9;null&#9;null&#10;jobs&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/database/migrations/2019_12_05_124936_create_jobs_table.php&#10;employees&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/database/migrations/2019_12_05_125008_create_employees_table.php&#10;web.php&#9;FILE&#9;file://C:/Users/Rohman/Desktop/uas/routes/web.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -155,6 +144,10 @@
       <workItem from="1576560233205" duration="7019000" />
       <workItem from="1585213165348" duration="1845000" />
       <workItem from="1585405926526" duration="232000" />
+      <workItem from="1586992252080" duration="567000" />
+      <workItem from="1587012166661" duration="1051000" />
+      <workItem from="1587074211035" duration="46000" />
+      <workItem from="1588200296214" duration="813000" />
     </task>
     <servers />
   </component>
@@ -168,12 +161,20 @@
     </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2472" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588201117654">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588201117654" />
     <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585815371774">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585815371774" />
+    <state x="2536" y="173" width="670" height="676" key="search.everywhere.popup" timestamp="1588200957372">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="173" width="670" height="676" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588200957372" />
   </component>
 </project>
